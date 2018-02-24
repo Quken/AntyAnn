@@ -2,13 +2,14 @@
   font-family: 'Raleway', sans-serif;
 }
 
-html {
-  box-sizing: border-box;
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
 body {
-  width: 80%;
-  margin: 73px auto;
+  display: grid;
+  justify-content: center;
   background-image: url("../img/header-bg.png");
   background-repeat: no-repeat;
   background-color: #141414;
@@ -16,8 +17,9 @@ body {
 
 .header-menu ul {
   display: grid;
-  grid-template-columns: repeat(5, 1fr) 2fr 1fr 1fr;
-  grid-column-gap: 20px;
+  grid-template-columns: repeat(5, 1fr) 3fr 1fr 1fr;
+  grid-template-rows: 100px;
+  grid-column-gap: 35px;
   align-items: center;
 }
 
@@ -61,8 +63,14 @@ body {
   text-align: center;
 }
 
-header h1 {
-  margin: 150px auto 94px;
+.header-main-text {
+  display: grid;
+  grid-template-rows: 350px 60px 139px 122px 129px;
+  justify-items: center;
+  align-items: center;
+}
+
+.header-main-text h1 {
   font-size: 62px;
   font-weight: 300;
   color: #fff;
@@ -70,9 +78,7 @@ header h1 {
   text-align: center;
 }
 
-header p a {
-  display: block;
-  margin: 30px auto 95px;
+.header-main-text a {
   font-size: 14px;
   font-weight: 300;
   color: #fff;
@@ -81,7 +87,7 @@ header p a {
   text-align: center;
 }
 
-header h2 {
+.header-main-text h2 {
   font-size: 26px;
   font-weight: 300;
   color: #fff;
@@ -90,8 +96,6 @@ header h2 {
 }
 
 .header-button {
-  display: block;
-  margin: 0 auto;
   outline: none;
   width: 390px;
   height: 60px;
@@ -111,9 +115,4 @@ header h2 {
 
 .header-button:hover {
   cursor: pointer;
-}
-
-#mouse-icon {
-  display: block;
-  margin: 60px auto 0;
 }

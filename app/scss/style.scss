@@ -374,7 +374,21 @@ $side-margin : 14%;
     .created-by {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 0 15%;
+        grid-gap: 0 5%;
         color: #fff;
+        padding: 36px 0 40px;
+        div {
+            color: #ffffff;
+            font-size: 16px;
+            width: 100%;
+            text-align:center;
+            .img-sub {
+                vertical-align: sub;
+            }
+        }
+        div:ntn-child(2) {
+            color: #ffffff;
+            font-size: 14px;
+        }
     }
 }

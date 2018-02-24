@@ -294,6 +294,8 @@ body {
       text-align: center; }
       .footer .created-by div .img-sub {
         vertical-align: sub; }
+      .footer .created-by div a {
+        color: #ffffff; }
     .footer .created-by div:ntn-child(2) {
       color: #ffffff;
       font-size: 14px; }

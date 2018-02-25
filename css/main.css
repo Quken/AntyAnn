@@ -5,9 +5,11 @@
 /* Header */
 
 .header-container {
+  display: grid;
+  grid-template-columns: 1fr 1170px 1fr;
   background-image: url("../img/header-bg.png");
-  background-position: center;
   background-repeat: no-repeat;
+  background-size: 100%;
   background-color: #141414;
 }
 
@@ -17,8 +19,6 @@
   grid-template-rows: 100px;
   grid-column-gap: 35px;
   align-items: center;
-  width: 80%;
-  margin: 0 auto;
 }
 
 .header-menu ul li a {
@@ -61,7 +61,7 @@
 
 .header-main-text {
   display: grid;
-  grid-template-rows: 350px 60px 74px 122px 129px;
+  grid-template-rows: 350px 60px 44px 157px 189px;
   justify-items: center;
   align-items: center;
 }
@@ -113,27 +113,22 @@
   cursor: pointer;
 }
 
-/* Sub menu */
-
-.sub-menu {
-  height: 100px;
-  background-color: #fff;
-  width: 80%;
-  margin: 0 auto;
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1170px 1fr;
 }
+
+/* Sub menu */
 
 .sub-menu ul {
   display: grid;
-  grid-template-columns: repeat(4, 1fr) 2fr 0.5fr 1fr 1fr;
+  grid-template-columns: 40px 80px 70px 58px 230px 104px 370px 100px;
   grid-template-rows: 100px;
   grid-column-gap: 37px;
   align-items: center;
-  width: 100%;
-  margin: 0 auto;
 }
 
 .sub-menu ul li a {
-  width: 40px;
   height: 12px;
   color: #222328;
   font-size: 14px;
@@ -142,7 +137,6 @@
 }
 
 .sub-menu ul li label {
-  width: 86px;
   height: 15px;
   color: #141414;
   font-family: Raleway;
@@ -160,13 +154,14 @@
   font-family: Raleway;
   font-size: 14px;
   font-weight: 500;
-  width: 370px;
   height: 50px;
   border-radius: 25px;
   border: 1px solid  rgba(20, 20, 20, 0.1);
+  outline: none;
 }
 
 .sub-menu-submit {
+  outline: none;
   background-color: #141414;
   color: #ffffff;
   font-family: Raleway;
@@ -174,7 +169,6 @@
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1.65px;
-  width: 100px;
   height: 36px;
   border: none;
   border-radius: 18px;

@@ -242,11 +242,11 @@ $side-margin : 13%;
                 text-align: inherit;
                 opacity: 0.7;
                 color: #141414;
-                font-family: Raleway;
                 font-size: 12px;
+                padding: 18px 0;
+                display: inline-block;
                 font-weight: 400;
                 text-transform: uppercase;
-                /* Text style for "View All f" */
                 letter-spacing: 1.8px;
             }
         }
@@ -255,10 +255,10 @@ $side-margin : 13%;
         display: grid;
         text-align: center;
         grid-template-columns: 1fr;
-        margin: 105px auto 0;
+        margin: 98px auto 0;
 
         span {
-            margin-bottom: 45px;
+            margin-bottom: 28px;
             color: #222328;
             font-family: Raleway;
             font-size: 42px;
@@ -269,16 +269,18 @@ $side-margin : 13%;
             color: #3a3d4b;
             font-family: Raleway;
             font-size: 18px;
-            margin-bottom: 50px;
+            width: 82%;
+            text-align: center;
+            margin: 0px auto 57px;
         }
 
         div {
 
             border-radius: 30px;
             background-color: #141414;
-            width: 38%;
+            width: 35%;
             margin: 0 auto;
-            padding: 25px 0;
+            padding: 20px 0;
             a {
                 color: #ffffff;
                 font-family: Raleway;
@@ -286,6 +288,7 @@ $side-margin : 13%;
                 text-transform: uppercase;
                 display: inline-block;
                 width: 100%;
+                letter-spacing: 1.8px;
             }
         }
     }
@@ -299,12 +302,15 @@ $side-margin : 13%;
 .startup-guide {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 105px auto 0;
+    margin: 117px auto 0;
+    div.startup-guide-topics:last-child {
+        margin: 98px 0 95px 14%;
+    }
     .startup-guide-topics {
         width: 60%;
         text-align: left;
-        margin: 100px 0 95px 27%;
-
+        margin: 98px 0 95px 26%;
+    
         span {
             margin-bottom: 25px;
             opacity: 0.5;
@@ -313,16 +319,17 @@ $side-margin : 13%;
             font-weight: 400;
             line-height: 24px;
             text-transform: uppercase;
+            letter-spacing: 1.8px;
         }
 
         p {
-            margin: 30px auto 50px;
+            margin: 16px auto 50px;
             color: #ffffff;
             font-size: 42px;
         }
 
         div {
-            width: 45%;
+            width: 41%;
             text-align: center;
             border-radius: 25px;
             border: 1px solid #ffffff;
@@ -334,6 +341,7 @@ $side-margin : 13%;
                 font-weight: 400;
                 text-transform: uppercase;
                 padding: 20px 0;
+                letter-spacing: 1.8px;
             }
         }
     }

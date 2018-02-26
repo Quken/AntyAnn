@@ -297,7 +297,7 @@ body {
   .footer .footer-hr {
     background-color: #ffffff;
     opacity: 0.03;
-    margin-top: 86px; }
+    margin: 86px auto 0; }
   .footer .second-menu {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 0 2%; }
@@ -327,18 +327,25 @@ body {
   .footer .created-by {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0 5%;
     color: #fff;
-    padding: 36px 0 40px; }
+    padding: 29px 0 40px; }
     .footer .created-by div {
       color: #ffffff;
       font-size: 16px;
-      width: 100%;
+      width: 73%;
       text-align: center; }
       .footer .created-by div .img-sub {
         vertical-align: sub; }
       .footer .created-by div a {
         color: #ffffff; }
-    .footer .created-by div:ntn-child(2) {
+    .footer .created-by div:nth-child(2) {
       color: #ffffff;
-      font-size: 14px; }
+      width: 100%;
+      font-size: 14px;
+      padding-top: 12px; }
+    .footer .created-by div:nth-child(3) {
+      color: #ffffff;
+      width: 100%;
+      font-size: 14px;
+      padding-top: 8px;
+      margin-left: 11%; }

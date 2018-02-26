@@ -383,7 +383,7 @@ $side-margin : 13%;
     .footer-hr {
         background-color: #ffffff;
         opacity: 0.03;
-        margin-top: 86px;
+        margin: 86px auto 0;
     }
     .second-menu {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -425,13 +425,13 @@ $side-margin : 13%;
     .created-by {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 0 5%;
+
         color: #fff;
-        padding: 36px 0 40px;
+        padding: 29px 0 40px;
         div {
             color: #ffffff;
             font-size: 16px;
-            width: 100%;
+            width: 73%;
             text-align:center;
             .img-sub {
                 vertical-align: sub;
@@ -440,9 +440,18 @@ $side-margin : 13%;
                 color: #ffffff;
             }
         }
-        div:ntn-child(2) {
+        div:nth-child(2) {
             color: #ffffff;
+            width: 100%;
             font-size: 14px;
+            padding-top: 12px;
+        }
+        div:nth-child(3) {
+            color: #ffffff;
+            width: 100%;
+            font-size: 14px;
+            padding-top: 8px;
+            margin-left: 11%;
         }
     }
 }

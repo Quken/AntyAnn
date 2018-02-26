@@ -35,8 +35,19 @@
                         </div>
                     </div>
                 <div class="slider">
-                    <img src="./img/iphone7.png" alt="">
-                    <div class="slider-icons">slider</div>
+                    <img class="phone-bg" src="./img/iphone7.png" alt="">
+                    <div class="slider-imgs">
+                        <img class="mySlides" src="./img/slider-screen.png">
+                        <img class="mySlides" src="./img/slider-screen.png">
+                        <img class="mySlides" src="./img/slider-screen.png">
+                        <a href="" class="prev-img">&#10094</a>
+                        <a href="" class="next-img">&#10095</a>
+                    </div>
+                    <div class="slider-icons">
+                        <div class="dot" onclick="currentSlide(1)"></div>
+                        <div class="dot" onclick="currentSlide(2)"></div>
+                        <div class="dot" onclick="currentSlide(3)"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -186,5 +197,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>

@@ -129,9 +129,49 @@ body {
           line-height: 28px; }
     .grid .slider-area .slider-options > div:hover {
       border: 1px solid rgba(20, 20, 20, 0.1); }
+    .grid .slider-area .slider .phone-bg {
+      position: relative; }
+    .grid .slider-area .slider .slider-imgs {
+      position: relative;
+      top: 0;
+      left: 0;
+      transition: .5s ease; }
+      .grid .slider-area .slider .slider-imgs img {
+        z-index: 2;
+        position: absolute;
+        top: -700px;
+        left: -54px; }
+      .grid .slider-area .slider .slider-imgs a {
+        z-index: 5;
+        position: absolute; }
+      .grid .slider-area .slider .slider-imgs .prev-img, .grid .slider-area .slider .slider-imgs .next-img {
+        z-index: 5;
+        top: -400px;
+        position: absolute;
+        font-size: 45px;
+        color: #fff;
+        transition: .5s ease;
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.6); }
+        .grid .slider-area .slider .slider-imgs .prev-img:hover, .grid .slider-area .slider .slider-imgs .next-img:hover {
+          color: #01091c;
+          transition: .5s ease;
+          text-shadow: 0; }
+      .grid .slider-area .slider .slider-imgs .prev-img {
+        left: 5%; }
+      .grid .slider-area .slider .slider-imgs .next-img {
+        right: 10%; }
     .grid .slider-area .slider .slider-icons {
       text-align: center;
-      margin-top: 15px; }
+      margin-top: 15px;
+      z-index: 10; }
+      .grid .slider-area .slider .slider-icons .dot {
+        display: inline-block;
+        height: 13px;
+        width: 13px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        cursor: pointer; }
   .grid .rapture-area {
     display: grid;
     grid-template-columns: 1fr;

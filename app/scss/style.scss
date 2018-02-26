@@ -56,41 +56,49 @@ body {
 }
 
 
-$side-margin : 14%;
+$side-margin : 13%;
 .grid {
     display: grid;
 
     grid-template-columns: 1fr;
     margin: 0 $side-margin;
     .features-area {
-        margin: 100px 10% 0;
+        margin: 100px 8.5% 0;
         .transform-ideas {
             display: grid;
-
-            grid-template-columns: 9.57fr 2.95fr;
-            grid-gap: 0 20%;
+            grid-template-columns: 6.4fr 2.7fr;
+            grid-gap: 0 10%;
             
-            p {
-                font-size : 42px;
+            h2 {
+                color: #222328;
+                font-family: Raleway;
+                font-size: 42px;
+                font-weight: 300;
+                line-height: 52px;
             }
+
             div {
-                height: 60px;
+                height: 47px;
                 box-shadow: 0 30px 60px rgba(27, 233, 56, 0.2), 0 10px 20px rgba(27, 233, 56, 0.2), 0 20px 40px rgba(27, 233, 56, 0.2);
                 border-radius: 25px;
+                width: 80%;
+                margin-left: 15%;
+                margin-top: 15px;
                 background-color: #1be938;
             }
+            
             a {
                 text-decoration: none;
-
                 display: inline-block;
                 width: 100%;
-                
-                
-                p {
-                    padding: 20px 0;
-                    font-size: 16px;
-                    text-align: center;
-                }
+                text-align: center;
+                padding: 18px 0;  
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: 400;
+                opacity: 0.7;
+                color: #141414;
+                letter-spacing: 1.8px;
             }
 
             h6 {
@@ -98,7 +106,7 @@ $side-margin : 14%;
                 color: #141414;
                 font-family: Raleway;
                 font-size: 18px;
-                padding: 40px 0;
+                padding: 25px 0 80px;
             }
         }
 
@@ -111,27 +119,38 @@ $side-margin : 14%;
     }
     .slider-area {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 0 30%;  
+        grid-template-columns: 4fr 3.98fr;
+        grid-gap: 0 21%;
         margin-bottom: 105px;
+        //???????????
+        
         .slider-options {
             display: grid;
             grid-template-rows: 1fr 1fr 1fr;
-            grid-gap: 60px 0;
             border-radius: 10px;
             div {
                 border: 1px solid #fff;
                 border-radius: 10px;
-                padding: 45px 18% 0 12%;
+                padding: 36px 18% 0px 11%;
 
                 span {
                     color: #141414;
+                    font-family: Raleway;
                     font-size: 14px;
+                    font-weight: 400;
+                    line-height: 26px;
                     text-transform: uppercase;
+                    /* Text style for "F, ast Fee" */
+                    letter-spacing: 1.4px;
                 }
 
                 p {
-                    margin: 25px 0 45px 0;
+                    margin: 16px 0px 45px -2px;
+                    color: #141414;
+                    font-family: Raleway;
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 28px;
                 }
 
             }
@@ -150,10 +169,10 @@ $side-margin : 14%;
         text-align: center;
         padding: 100px 0 90px 0;
 
-        p {
+        h2 {
             color: #ffffff;
             font-size: 52px;
-            margin-bottom: 40px
+            margin-bottom: 36px;
         }
 
         span {

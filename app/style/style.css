@@ -236,10 +236,12 @@ body {
   margin: 117px auto 0; }
   .startup-guide div.startup-guide-topics:last-child {
     margin: 98px 0 95px 14%; }
+    .startup-guide div.startup-guide-topics:last-child div {
+      width: 51%; }
   .startup-guide .startup-guide-topics {
     width: 60%;
     text-align: left;
-    margin: 98px 0 95px 26%; }
+    margin: 98px 0 104px 26%; }
     .startup-guide .startup-guide-topics span {
       margin-bottom: 25px;
       opacity: 0.5;
@@ -273,27 +275,32 @@ body {
   background-color: #141414; }
   .footer .main-menu {
     width: 46%;
-    margin: 35px 0; }
+    margin: 35px 0 21px; }
     .footer .main-menu li {
       display: inline-block;
       vertical-align: top;
-      margin: 0 3%;
-      padding: 10px .2%; }
+      margin: 0px 2%;
+      padding: 10px 0.5%; }
       .footer .main-menu li a {
         width: 100%;
         color: #ffffff;
         font-family: Raleway;
         font-size: 14px; }
     .footer .main-menu li:first-child {
-      margin: 0 3% 0 0; }
+      margin: 0 2% 0 0; }
     .footer .main-menu li:last-child {
-      margin: 0 0 0 3%; }
+      margin: 0 0 0 2%; }
   .footer hr {
     background-color: #ffffff;
-    opacity: .1; }
+    opacity: .1;
+    margin-bottom: 60px; }
+  .footer .footer-hr {
+    background-color: #ffffff;
+    opacity: 0.03;
+    margin-top: 86px; }
   .footer .second-menu {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 0 5%; }
+    grid-gap: 0 2%; }
   .footer .second-menu > ul {
     width: 100%;
     color: #ffffff;
@@ -302,13 +309,14 @@ body {
     font-size: 14px;
     display: inline-block; }
     .footer .second-menu > ul li:first-child {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      margin-bottom: 27px; }
     .footer .second-menu > ul li {
-      margin-bottom: 45px; }
+      margin-bottom: 24px; }
     .footer .second-menu > ul a {
       color: #8c8f94; }
     .footer .second-menu > ul .special-list-item {
-      margin-top: 62px; }
+      margin-top: 43px; }
   .footer .social > li:first-child {
     display: block;
     width: 100%; }

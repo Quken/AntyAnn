@@ -305,11 +305,14 @@ $side-margin : 13%;
     margin: 117px auto 0;
     div.startup-guide-topics:last-child {
         margin: 98px 0 95px 14%;
+        div {
+            width: 51%;
+        }
     }
     .startup-guide-topics {
         width: 60%;
         text-align: left;
-        margin: 98px 0 95px 26%;
+        margin: 98px 0 104px 26%;
     
         span {
             margin-bottom: 25px;
@@ -352,12 +355,12 @@ $side-margin : 13%;
     background-color: #141414;
     .main-menu {
         width: 46%;
-        margin: 35px 0;
+        margin: 35px 0 21px;
         li {
             display: inline-block;
             vertical-align: top;
-            margin: 0 3%;
-            padding: 10px .2%;
+            margin: 0px 2%;
+            padding: 10px 0.5%;
             a {
                 width: 100%;
                 color: #ffffff;
@@ -366,20 +369,25 @@ $side-margin : 13%;
             }
         }
         li:first-child {
-            margin: 0 3% 0 0;
+            margin: 0 2% 0 0;
         }
         li:last-child {
-            margin: 0 0 0 3%;
+            margin: 0 0 0 2%;
         }
     }
     hr {
         background-color: #ffffff;
         opacity: .1;
+        margin-bottom: 60px;
     }
-
+    .footer-hr {
+        background-color: #ffffff;
+        opacity: 0.03;
+        margin-top: 86px;
+    }
     .second-menu {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-gap: 0 5%;
+        grid-gap: 0 2%;
     }
 
     .second-menu > ul{
@@ -391,15 +399,16 @@ $side-margin : 13%;
         display: inline-block;
         li:first-child {
             text-transform: uppercase;
+            margin-bottom: 27px;
         }
         li {
-            margin-bottom:45px;
+            margin-bottom: 24px;
         }
         a {
             color: #8c8f94;
         }
         .special-list-item {
-            margin-top: 62px;
+            margin-top: 43px;
         }
 
         

@@ -13,7 +13,7 @@
 
 <body>
   <header>
-    <div class="header-container">
+    <div class="grid-container header">
       <div></div>
       <nav class="header-menu">
         <ul>
@@ -53,8 +53,8 @@
           <p>
             <a href="#">Already have a Rapture store?</a>
           </p>
-          <h2>The Rapture Startup is the one platform you need to build the business
-            <br> you’ve always dreamed of</h2>
+          <h2>The Rapture Startup is the one platform you need to build the
+            <br> business you’ve always dreamed of</h2>
           <img src="img/header-mouse-icon.png" alt="mouse icon" id="mouse-icon">
         </section>
       </nav>
@@ -63,7 +63,7 @@
   </header>
 
   <main>
-    <div class="main-container">
+    <div class="grid-container">
       <div></div>
       <nav class="sub-menu">
         <ul>
@@ -80,15 +80,19 @@
             <a href="#">Contacts</a>
           </li>
           <li></li>
-          <label for="email">Stay in Touch</label>
-          <input type="email" placeholder="Subscribe to our newsletters" class="sub-menu-email">
-          <button type="submit" class="sub-menu-submit">Submit</button>
+          <div class="sub-menu-button">
+            <label for="email">Stay in Touch</label>
+            <input type="email" placeholder="Subscribe our newsletters" class="sub-menu-email">
+            <button type="submit" class="sub-menu-submit">Submit</button>
+          </div>
         </ul>
       </nav>
       <div></div>
     </div>
+    
     <img src="img/divider.png" alt="divider" class="main-divider">
-    <div class="main-container">
+    
+    <div class="grid-container">
       <div></div>
       <div class="iphone-features">
         <h2>Rapture POS is the easiest way to sell your products at events like fairs, pop ups &amp; markets</h2>
@@ -114,7 +118,9 @@
       </div>
       <div></div>
     </div>
+    
     <img src="img/divider.png" alt="divider" class="main-divider">
+    
     <div class="main-container">
       <div></div>
       <div class="main-components">
@@ -141,7 +147,8 @@
       </div>
       <div></div>
     </div>
-    <div class="main-clients">
+
+    <!-- <div class="main-clients">
       <div class="main-container">
         <div></div>
         <div class="clients">
@@ -150,9 +157,12 @@
           <div class="reviews">
             <div class="reviews-box1">
               <img src="img/placeholder.png" alt="placeholder" class="placeholder-1">
-              <p class="rew first-com">Rapture takes the hassle out of going through the feedback on a design, which ultimately speeds up the entire
-                process, something everyone wants.</p>
-              <p class="brilliant-rew">It's a brilliant product.</p>
+              <div class="rew first-com">
+                <p>Rapture takes the hassle out of going through the feedback on a design, which ultimately speeds up the entire
+                  process, something everyone wants.
+                  <br>
+                  <br> It's a brilliant product.</p>
+              </div>
               <div class="first">
                 <img src="img/client-1.png" alt="client" class="clients-image">
                 <p class="clients-name">Cole Stanley</p>
@@ -161,9 +171,11 @@
             </div>
             <div class="reviews-box2">
               <img src="img/placeholder.png" alt="placeholder" class="placeholder-2">
-              <p class="rew second-com">Rapture has made massive improvements when communicating design at TMW. There are usually many stakeholders
-                involved in the process, both internally and externally, and having a simple platform for feedback and approval
-                is extremely helpful. Awesome work guys!</p>
+              <div class="rew second-com">
+                <p>Rapture has made massive improvements when communicating design at TMW. There are usually many stakeholders
+                  involved in the process, both internally and externally, and having a simple platform for feedback and
+                  approval is extremely helpful. Awesome work guys!</p>
+              </div>
               <div class="second">
                 <img src="img/client-2.png" alt="client" class="clients-image">
                 <p class="clients-name">Gabrielle Campbell</p>
@@ -172,7 +184,9 @@
             </div>
             <div class="reviews-box3">
               <img src="img/placeholder.png" alt="placeholder" class="placeholder-3">
-              <p class="rew third-com">Easy to use, works great, customizable, and by far, the best support I have experienced.</p>
+              <div class="rew third-com">
+                <p>Easy to use, works great, customizable, and by far, the best support I have experienced.</p>
+              </div>
               <div class="third">
                 <img src="img/client-3.png" alt="client" class="clients-image">
                 <p class="clients-name">Nathaniel Fisher</p>
@@ -183,7 +197,45 @@
         </div>
         <div></div>
       </div>
+    </div> -->
+    <!-- <div class="main-container">
+      <div class="client-div"></div>
+      <div class="main-clients">
+        <p class="client-testimonials">Client’s Testimonials</p>
+        <h2 class="clients-main-text">Some of the awesome people &amp; companies that love The Rapture Startup</h2>
+        <div class="reviews">
+          <div class="client-1">
+            <img src="img/placeholder.png" alt="placeholed">
+            <p class="client-comment">Rapture takes the hassle out of going through the feedback on a design, which ultimately speeds up the entire
+              process, something everyone wants.
+            </p>
+            <p class="client-comment">It's a brilliant product.</p>
+            <img src="img/client-1.png" alt="client">
+            <p class="clients-name">Cole Stanley</p>
+            <p class="clients-position">CEO &amp; Co-Founder OF Evernote</p>
+          </div>
+          <div class="client-2">
+            <img src="img/placeholder.png" alt="placeholed">
+            <p class="client-comment">Rapture has made massive improvements when communicating design at TMW. There are usually many stakeholders involved
+              in the process, both internally and externally, and having a simple platform for feedback and approval is extremely
+              helpful. Awesome work guys!
+            </p>
+            <img src="img/client-2.png" alt="client">
+            <p class="clients-name">Gabrielle Campbell</p>
+            <p class="clients-position">Manager at Invision</p>
+          </div>
+          <div class="client-3">
+            <img src="img/placeholder.png" alt="placeholed">
+            <p class="client-comment">Easy to use, works great, customizable, and by far, the best support I have experienced.</p>
+            <img src="img/client-3.png" alt="client">
+            <p class="clients-name">Nathaniel Fisher</p>
+            <p class="clients-position">Designer at Adobe</p>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="client-div"></div>
+    </div> -->
   </main>
 </body>
 

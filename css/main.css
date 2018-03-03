@@ -5,12 +5,13 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: 13% 1fr 13%;
+  grid-template-columns: 1fr;
+  margin: 0 15%;
 }
 
 /* ----- Header ----- */
 
-.header {
+header {
   background-image: url("../img/header-bg.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -20,8 +21,8 @@
 
 .header-menu ul {
   display: grid;
-  grid-template-columns: repeat(5, 1fr) 3fr 1fr 2fr;
-  grid-template-rows: 165px;
+  grid-template-columns: repeat(5, 1fr) 2fr repeat(2, 1fr);
+  grid-template-rows: 163px;
   grid-column-gap: 3%;
   align-items: center;
 }
@@ -33,6 +34,12 @@
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
+  transition-property: opacity;
+  transition-duration: .2s;
+}
+
+.header-menu ul li a:hover {
+  opacity: 0.8;
 }
 
 .login a p {
@@ -46,6 +53,12 @@
   height: 36px;
   padding: 12px 26px;
   text-align: center;
+  transition-property: border;
+  transition-duration: .5s;
+}
+
+.login a p:hover {
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .get-started a p {
@@ -57,15 +70,23 @@
   text-transform: uppercase;
   background-color: #fff;
   border-radius: 18px;
-  padding: 13px 20px;
+  width: 130%;
+  padding: 13px 26px;
   text-align: center;
+  transition-property: color, background-color;
+  transition-duration: .5s;
+}
+
+.get-started a p:hover {
+  background-color: #141414;
+  color: #fff;
 }
 
 /* Main banner */
 
 .header-main-text {
   display: grid;
-  grid-template-rows: 265px 100px 34px 230px 0px 105px;
+  grid-template-rows: 270px 95px 35px 230px 0px 107px;
   justify-items: center;
   align-items: center;
 }
@@ -76,6 +97,7 @@
   color: #fff;
   line-height: 72px;
   text-align: center;
+  width: 52%;
 }
 
 .header-main-text p a {
@@ -93,11 +115,12 @@
   color: #fff;
   line-height: 36px;
   text-align: center;
+  width: 63%;
 }
 
 .header-button {
   outline: none;
-  width: 32%;
+  width: 34%;
   height: 60px;
   border: none;
   border-radius: 30px;
@@ -163,7 +186,7 @@
   font-family: Raleway;
   font-size: 14px;
   font-weight: 500;
-  width: 370px; /* */
+  width: 370px;
   height: 50px;
   border-radius: 25px;
   border: 1px solid  rgba(20, 20, 20, 0.1);
@@ -194,7 +217,7 @@
 
 .iphone-features {
   display: grid;
-  grid-template-rows: 265px 0px 545px 200px;  
+  grid-template-rows: 265px 0px 545px 227px;  
   justify-content: center;
   align-items: center;
   height: 1150px;
@@ -265,6 +288,11 @@
   line-height: 28px;
 }
 
+.video {
+  position: absolute;
+  margin: 19px 93px;
+}
+
 /* Components */
 
 .main-components {
@@ -301,8 +329,8 @@
 
 .components {
   display: grid;
-  grid-template-columns: 1fr 50%;
-  grid-column-gap: 3%;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
   justify-content: center;
   text-align: center;
 }
@@ -315,7 +343,16 @@
   background-color: #fff;
   width: 100%;
   height: 600px;
-  border-radius: 0 0 10px 10px;
+  border-radius: 10px;
+  border-left: 1px solid rgba(20, 20, 20, 0.1);
+  border-right: 1px solid rgba(20, 20, 20, 0.1);
+  border-bottom: 1px solid rgba(20, 20, 20, 0.1);
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  /* box-shadow: 0 30px 60px rgba(17, 21, 39, 0.15), 0 50px 100px rgba(17, 21, 39, 0.15), 0 40px 80px rgba(17, 21, 39, 0.15); */
+}
+
+.box1:hover {
   box-shadow: 0 30px 60px rgba(17, 21, 39, 0.15), 0 50px 100px rgba(17, 21, 39, 0.15), 0 40px 80px rgba(17, 21, 39, 0.15);
 }
 
@@ -381,6 +418,10 @@ text-decoration: underline;
 text-transform: uppercase;
 letter-spacing: 1.8px;
 }
+
+
+
+
 
 /* Clients */
 

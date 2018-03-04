@@ -72,7 +72,7 @@ body {
         margin-left: 15%;
         margin-top: 15px;
         background-color: #1be938; }
-      .grid .features-area .transform-ideas a {
+      .grid .features-area .transform-ideas .view-features {
         text-decoration: none;
         display: inline-block;
         width: 100%;
@@ -216,7 +216,9 @@ body {
           margin-top: 35px; }
     .grid .rapture-area p {
       font-size: 16px;
-      margin-bottom: 26px; }
+      margin-bottom: 26px;
+      color: #ffffff;
+      font-family: Raleway; }
     .grid .rapture-area .rapture-features-more {
       border-radius: 25px;
       background-color: #1be938;
@@ -256,7 +258,17 @@ body {
       background-color: #141414;
       width: 35%;
       margin: 0 auto;
-      padding: 20px 0; }
+      padding: 20px 0;
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      position: relative;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
       .grid .awesome-site div a {
         color: #ffffff;
         font-family: Raleway;
@@ -265,6 +277,38 @@ body {
         display: inline-block;
         width: 100%;
         letter-spacing: 1.8px; }
+    .grid .awesome-site div:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #1be938;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transform-origin: 0 50%;
+      transform-origin: 0 50%;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+      border-radius: 30px; }
+    .grid .awesome-site div:hover {
+      border-radius: 30px;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
+      .grid .awesome-site div:hover a {
+        color: black;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s; }
+    .grid .awesome-site div:hover:before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      border-radius: 30px; }
 
 .startup-guide-area {
   background: url(../img/bg_1.png) no-repeat, url(../img/bg_2.png) no-repeat 100% 0;
@@ -309,6 +353,26 @@ body {
         text-transform: uppercase;
         padding: 20px 0;
         letter-spacing: 1.8px; }
+      .startup-guide .startup-guide-topics div a:hover {
+        -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
+        -webkit-mask-size: 200%;
+        animation: shine 2s infinite; }
+      .startup-guide .startup-guide-topics div effect-shine:hover {
+        -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
+        -webkit-mask-size: 200%;
+        animation: shine 2s infinite; }
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%; }
+  to {
+    -webkit-mask-position: -50%; } }
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%; }
+  to {
+    -webkit-mask-position: -50%; } }
 
 .footer {
   width: 100%;

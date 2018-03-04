@@ -87,7 +87,7 @@ $side-margin : 13%;
                 background-color: #1be938;
             }
             
-            a {
+            .view-features {
                 text-decoration: none;
                 display: inline-block;
                 width: 100%;
@@ -282,6 +282,8 @@ $side-margin : 13%;
         p {
             font-size: 16px;
             margin-bottom: 26px;
+            color: #ffffff;
+            font-family: Raleway;
         }
 
         .rapture-features-more {
@@ -327,7 +329,6 @@ $side-margin : 13%;
         }
 
         div {
-
             border-radius: 30px;
             background-color: #141414;
             width: 35%;
@@ -342,6 +343,54 @@ $side-margin : 13%;
                 width: 100%;
                 letter-spacing: 1.8px;
             }
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px transparent;
+            position: relative;
+            -webkit-transition-property: color;
+            transition-property: color;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+        }  
+        div:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #1be938;
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+            border-radius: 30px;        
+        }
+        div:hover {
+            a {
+                color: black;
+                -webkit-transition-duration: 0.5s;
+                transition-duration: 0.5s;
+            }
+            border-radius: 30px;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+            
+        }
+        div:hover:before {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            border-radius: 30px;
+            
         }
     }
 }
@@ -398,6 +447,35 @@ $side-margin : 13%;
                 padding: 20px 0;
                 letter-spacing: 1.8px;
             }
+            a:hover {
+                -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+                -webkit-mask-size: 200%;
+                animation: shine 2s infinite;
+              }
+              effect-shine:hover {
+                -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+                -webkit-mask-size: 200%;
+                animation: shine 2s infinite;
+                }
+
+                @-webkit-keyframes shine {
+                from {
+                    -webkit-mask-position: 150%;
+                }
+                
+                to {
+                    -webkit-mask-position: -50%;
+                }
+            }
+            @-webkit-keyframes shine {
+                from {
+                  -webkit-mask-position: 150%;
+                }
+                
+                to {
+                  -webkit-mask-position: -50%;
+                }
+            }
         }
     }
 }
@@ -419,7 +497,9 @@ $side-margin : 13%;
                 font-family: Raleway;
                 font-size: 14px;
             }
+            
         }
+
         li:first-child {
             margin: 0 2% 0 0;
         }

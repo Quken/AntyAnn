@@ -146,37 +146,14 @@ body {
     .grid .slider-area .slider-options > div:hover {
       transition: all .3s ease-in-out;
       border: 1px solid rgba(20, 20, 20, 0.1); }
-    .grid .slider-area .slider .phone-bg {
-      position: relative; }
     .grid .slider-area .slider .slider-imgs {
-      position: relative;
-      top: 0;
-      left: 0;
-      transition: .5s ease; }
-      .grid .slider-area .slider .slider-imgs img {
-        z-index: 2;
+      position: relative; }
+      .grid .slider-area .slider .slider-imgs .mySlides {
         position: absolute;
-        top: -700px;
-        left: -54px; }
-      .grid .slider-area .slider .slider-imgs a {
-        z-index: 5;
-        position: absolute; }
-      .grid .slider-area .slider .slider-imgs .prev-img, .grid .slider-area .slider .slider-imgs .next-img {
-        z-index: 5;
-        top: -400px;
-        position: absolute;
-        font-size: 45px;
-        color: #fff;
-        transition: .5s ease;
-        text-shadow: 0 0 20px rgba(0, 0, 0, 0.6); }
-        .grid .slider-area .slider .slider-imgs .prev-img:hover, .grid .slider-area .slider .slider-imgs .next-img:hover {
-          color: #01091c;
-          transition: .5s ease;
-          text-shadow: 0; }
-      .grid .slider-area .slider .slider-imgs .prev-img {
-        left: 5%; }
-      .grid .slider-area .slider .slider-imgs .next-img {
-        right: 10%; }
+        top: -670px;
+        left: 20px;
+        height: 580px;
+        width: 324px; }
     .grid .slider-area .slider .slider-icons {
       text-align: center;
       margin-top: 15px;

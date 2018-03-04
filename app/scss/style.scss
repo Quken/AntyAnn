@@ -186,45 +186,18 @@ body {
         .slider {
             
             .phone-bg {
-                position: relative;
+
             }
 
             .slider-imgs {
                 position: relative;
-                top: 0;
-                left: 0;
-                transition: .5s ease;
-                img {
-                    z-index: 2;
+                
+                .mySlides {
                     position: absolute;
-                    top: -700px;
-                    left: -54px;
-                    
-                }
-                a {
-                    z-index:5;
-                    position: absolute;
-                }
-                .prev-img, .next-img {
-                    z-index: 5;
-                    top: -400px;
-                    position: absolute;
-                    font-size: 45px;
-                    color: #fff;
-                    transition: .5s ease;
-                    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);                    
-                    &:hover {
-                        color: #01091c;
-                        transition: .5s ease;
-                        text-shadow: 0;
-                    }
-                }
-
-                .prev-img {
-                    left: 5%;                    
-                } 
-                .next-img {
-                    right: 10%;
+                    top: -670px;
+                    left: 20px;
+                    height: 580px;
+                    width: 324px;
                 }
             }
             .slider-icons {

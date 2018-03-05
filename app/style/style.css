@@ -92,7 +92,7 @@ body {
         display: inline-block;
         width: 100%;
         text-align: center;
-        padding: 18px 0;
+        padding: 1rem 0;
         text-transform: uppercase;
         font-size: 12px;
         font-weight: 400;
@@ -146,26 +146,28 @@ body {
     .grid .slider-area .slider-options > div:hover {
       transition: all .3s ease-in-out;
       border: 1px solid rgba(20, 20, 20, 0.1); }
-    .grid .slider-area .slider .slider-imgs {
-      position: relative; }
-      .grid .slider-area .slider .slider-imgs .mySlides {
-        position: absolute;
-        top: -670px;
-        left: 20px;
-        height: 580px;
-        width: 324px; }
-    .grid .slider-area .slider .slider-icons {
-      text-align: center;
-      margin-top: 15px;
-      z-index: 10; }
-      .grid .slider-area .slider .slider-icons .dot {
-        display: inline-block;
-        height: 13px;
-        width: 13px;
-        margin: 0 2px;
-        background-color: #bbb;
-        border-radius: 50%;
-        cursor: pointer; }
+    .grid .slider-area .slider {
+      text-align: center; }
+      .grid .slider-area .slider .slider-imgs {
+        position: relative; }
+        .grid .slider-area .slider .slider-imgs .mySlides {
+          position: absolute;
+          top: -670px;
+          left: 27px;
+          height: 580px;
+          width: 324px; }
+      .grid .slider-area .slider .slider-icons {
+        text-align: center;
+        margin-top: 15px;
+        z-index: 10; }
+        .grid .slider-area .slider .slider-icons .dot {
+          display: inline-block;
+          height: 13px;
+          width: 13px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          cursor: pointer; }
   .grid .rapture-area {
     display: grid;
     grid-template-columns: 1fr;
@@ -193,7 +195,7 @@ body {
       .grid .rapture-area .rapture-features img {
         float: left; }
       .grid .rapture-area .rapture-features figcaption {
-        padding: 12px 0 0 16%; }
+        padding: 1rem 0 0 16%; }
         .grid .rapture-area .rapture-features figcaption span {
           color: #ffffff;
           font-size: 16px;
@@ -224,7 +226,7 @@ body {
         opacity: 0.7;
         color: #141414;
         font-size: 12px;
-        padding: 18px 0;
+        padding: 1rem 0;
         display: inline-block;
         font-weight: 400;
         text-transform: uppercase;
@@ -252,7 +254,7 @@ body {
       background-color: #141414;
       width: 35%;
       margin: 0 auto;
-      padding: 20px 0;
+      padding: 1rem 0;
       display: inline-block;
       vertical-align: middle;
       -webkit-transform: perspective(1px) translateZ(0);
@@ -343,7 +345,7 @@ body {
         font-size: 12px;
         font-weight: 400;
         text-transform: uppercase;
-        padding: 20px 0;
+        padding: 1rem 0;
         letter-spacing: 1.8px; }
       .startup-guide .startup-guide-topics div a:hover {
         -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
@@ -370,7 +372,7 @@ body {
   width: 100%;
   background-color: #141414; }
   .footer .main-menu {
-    width: 46%;
+    width: 50%;
     margin: 35px 0 21px; }
     .footer .main-menu li {
       display: inline-block;
@@ -384,7 +386,7 @@ body {
         font-size: 14px;
         display: inline-block;
         vertical-align: middle;
-        padding: 10px 0;
+        padding: 1rem 0;
         transition: .3s ease-in-out; }
       .footer .main-menu li a:hover {
         color: #1be938;
@@ -483,3 +485,26 @@ body {
       font-size: 14px;
       padding-top: 8px;
       margin-left: 11%; }
+
+@media screen and (max-width: 1599px) {
+  .grid .slider-area {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .grid .slider-area .slider {
+    display: none; } }
+
+@media screen and (max-width: 1024px) {
+  .grid {
+    margin: 0; }
+    .grid .rapture-area {
+      border-radius: 0; }
+      .grid .rapture-area .rapture-features-more {
+        width: 25%; }
+        .grid .rapture-area .rapture-features-more a {
+          font-size: 1rem; }
+    .grid .features-area .transform-ideas {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 0; }
+  .footer .created-by div:nth-child(3) {
+    width: 80%; } }

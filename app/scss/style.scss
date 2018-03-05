@@ -390,8 +390,7 @@ body {
     }
 }
 
-.startup-guide-area {
-    background: url(../img/bg_1.png) no-repeat, url(../img/bg_2.png) no-repeat 100% 0;
+.startup-guide-area {    
     background-color: #3a3d4b;
 }
 
@@ -399,16 +398,26 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 117px auto 0;
+    .startup-left {
+        background: url(../img/bg_1.png) no-repeat;
+        //background-size: 100%;
+        
+    }
+    .startup-right {
+        background : url(../img/bg_2.png) no-repeat;
+        //background-size: 100%;
+    }
     div.startup-guide-topics:last-child {
-        margin: 98px 0 95px 14%;
-        div {
-            width: 51%;
-        }
+        //margin: 98px 0 95px 14%;
+        // div {
+        //     width: 51%;
+        // }
     }
     .startup-guide-topics {
-        width: 60%;
+        //width: 60%;
+        //width: 100%;
         text-align: left;
-        margin: 98px 0 104px 26%;
+        padding: 98px 0 104px 26%;
     
         span {
             margin-bottom: 25px;

@@ -305,21 +305,19 @@ body {
       border-radius: 30px; }
 
 .startup-guide-area {
-  background: url(../img/bg_1.png) no-repeat, url(../img/bg_2.png) no-repeat 100% 0;
   background-color: #3a3d4b; }
 
 .startup-guide {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 117px auto 0; }
-  .startup-guide div.startup-guide-topics:last-child {
-    margin: 98px 0 95px 14%; }
-    .startup-guide div.startup-guide-topics:last-child div {
-      width: 51%; }
+  .startup-guide .startup-left {
+    background: url(../img/bg_1.png) no-repeat; }
+  .startup-guide .startup-right {
+    background: url(../img/bg_2.png) no-repeat; }
   .startup-guide .startup-guide-topics {
-    width: 60%;
     text-align: left;
-    margin: 98px 0 104px 26%; }
+    padding: 98px 0 104px 26%; }
     .startup-guide .startup-guide-topics span {
       margin-bottom: 25px;
       opacity: 0.5;

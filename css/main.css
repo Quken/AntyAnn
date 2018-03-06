@@ -290,14 +290,14 @@ header {
 
 .video {
   position: absolute;
-  margin: 19px 93px;
+  margin: 19px 5.6%;
 }
 
 /* Components */
 
 .main-components {
   display: grid;
-  grid-template-rows: 170px 20px 850px; 
+  grid-template-rows: 170px 17px 850px; 
   justify-content: center;
   align-items: center;
   height: 1070px;
@@ -318,8 +318,9 @@ header {
 }
 
 .main-components h2 {
-  width: 935px;
+  width: 85%;
   height: 93px;
+  margin: 0 auto;
   color: #222328;
   font-family: Raleway;
   font-size: 42px;
@@ -329,19 +330,18 @@ header {
 
 .components {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 2rem;
+  grid-template-columns: 0.5fr 0fr;
+  grid-column-gap: 1.5rem;
   justify-content: center;
   text-align: center;
 }
 
 .components .box1 {
   display: grid;
-  grid-template-rows: 300px 98px 55px 135px;
+  grid-template-rows: 303px 95px 57px 135px;
   justify-items: center;
   align-items: center;
   background-color: #fff;
-  width: 100%;
   height: 600px;
   border-radius: 10px;
   border-left: 1px solid rgba(20, 20, 20, 0.1);
@@ -349,7 +349,6 @@ header {
   border-bottom: 1px solid rgba(20, 20, 20, 0.1);
   transition-duration: .2s;
   transition-timing-function: linear;
-  /* box-shadow: 0 30px 60px rgba(17, 21, 39, 0.15), 0 50px 100px rgba(17, 21, 39, 0.15), 0 40px 80px rgba(17, 21, 39, 0.15); */
 }
 
 .box1:hover {
@@ -375,7 +374,7 @@ line-height: 32px;
 }
 
 .box1 p, .box2 p {
-  width: 295px;
+  width: 65%;
   height: 68px;
   opacity: 0.8;
   color: #3a3d4b;
@@ -398,7 +397,7 @@ line-height: 32px;
 
 .box2 {
   display: grid;
-  grid-template-rows: 350px 0px 150px 80px;
+  grid-template-rows: 351px 0px 152px 80px;
   justify-items: center;
   align-items: center;
   background-color: #fff;
@@ -419,17 +418,9 @@ text-transform: uppercase;
 letter-spacing: 1.8px;
 }
 
-
-
-
-
 /* Clients */
 
 .clients {
-  display: grid;
-  grid-template-rows: 235px 0px;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   color: #fff;
   margin: 0 auto;
@@ -437,18 +428,27 @@ letter-spacing: 1.8px;
   background-color: #141414;
 }
 
-.clients-p {
-height: 12px;
-color: #ffffff;
-font-family: Raleway;
-font-size: 14px;
-font-weight: 400;
-text-transform: uppercase;
-letter-spacing: 1.4px;
+.main-clients {
+  display: grid;
+  grid-template-rows: 124px 138px 628px;
+  justify-content: center;
+  align-items: center;
 }
 
-.clients h2 {
-width: 907px;
+.client-testimonials {
+  display: grid;
+  align-self: flex-end;
+  height: 12px;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.clients-main-text {
+width: 66%;
 height: 93px;
 color: #ffffff;
 font-family: Raleway;
@@ -460,18 +460,40 @@ margin: 0 auto;
 
 .reviews {
   display: grid;
-  grid-template-columns: repeat(3, 370px);
-  grid-column-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 520px;
+  grid-column-gap: 2%;
+  margin: 0 15%;
 }
 
-.reviews-box1, .reviews-box2, .reviews-box3 {
+.client-1 {
   display: grid;
+  grid-template-rows: 39px 265px;
 }
 
-.rew {
-  position: absolute;
-  width: 288px;
-  height: 186px;
+.client-2 {
+  display: grid;
+  grid-template-rows: 35px 345px;
+}
+
+.client-2 .placeholder-img {
+  width: 100%;
+  height: 364px;
+}
+
+.client-3 {
+  display: grid;
+  grid-template-rows: 35px 155px;
+}
+
+.client-3 .placeholder-img {
+  width: 100%;
+  height: 170px;
+}
+
+.client-comment {
+  text-align: center;
+  margin: 0 auto;
   opacity: 0.7;
   color: #ffffff;
   font-family: Raleway;
@@ -480,85 +502,49 @@ margin: 0 auto;
   line-height: 28px;
 }
 
-.first, .second, .third {
+.client-1 .client-comment {
+  width: 80%;
+}
+
+.client-2 .client-comment {
+  width: 82%;
+}
+
+.client-3 .client-comment {
+  width: 87%;
+}
+
+.client-1 .client-foot {
   display: grid;
-  grid-template-rows: 95px 33px 10px;
-  justify-content: center;
-  align-content: center;
+  grid-template-rows: 86px 34px;
 }
 
-.first {
-  position: relative;
-  top: -220px;
-}
-
-.second {
-  position: relative;
-  top: -150px;
-  left: 10px;
-}
-
-.third {
-  position: relative;
-  top: -320px;
-  left: 10px;
+.client-2 .client-foot, .client-3 .client-foot {
+  display: grid;
+  grid-template-rows: 89px 34px;
 }
 
 .clients-name {
- height: 20px;
-color: #ffffff;
-font-family: Raleway;
-font-size: 20px;
-font-weight: 300;
-line-height: 28px;
+  height: 20px;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
 }
 
 .clients-position {
- height: 10px;
-opacity: 0.5;
-color: #ffffff;
-font-family: Raleway;
-font-size: 12px;
-font-weight: bold;
-line-height: 22px;
-text-transform: uppercase;
-/* Text style for "C, EO & Co" */
-letter-spacing: 1.8px;
+  height: 10px;
+  opacity: 0.5;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
 }
 
-.clients-image {
+.client-img {
   margin: 0 auto;
-}
-
-.placeholder-1 {
-  width: 370px;
-  height: 280px;
-}
-
-.placeholder-2 {
-  width: 370px;
-  height: 360px;
-}
-
-.placeholder-3 {
-  width: 370px;
-  height: 170px;
-}
-
-.first-com {
-  position: relative;
-  top: -280px;
-  left: 40px;
-}
-
-.second-com {
-  position: relative;
-  top: -335px;
-  left: 40px;
-}
-
-.third-com {
-  position: relative;
-  top: -200px;
-  left: 40px;
 }

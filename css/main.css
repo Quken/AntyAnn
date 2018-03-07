@@ -146,7 +146,7 @@ header {
   cursor: pointer;
 }
 
-@media screen and (max-width: 480px) { 
+@media screen and (max-width: 767px) { 
   .grid-container {
     display: block;
     margin: 0 auto;
@@ -200,6 +200,49 @@ header {
   .get-started a p:hover {
     background-color: #fff;
     color: #141414;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {   
+  .header-menu ul {
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: 5%;
+    grid-template-rows: 100px;
+    margin: 50px auto 0;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  #hidden {
+    display: none;
+  }
+  
+  .get-started a p {
+    width: 100%;
+    padding: 5px 10px;
+  }
+
+  .header-main-text {
+    display: grid;
+    grid-template-rows: 285px 45px 100px 140px 75px;
+  }
+  
+  .header-main-text h1 {
+    width: 100%;
+  }
+  
+  .header-main-text h2 {
+    width: 100%;
+  }
+  
+  .header-button {
+    width: 80%;
+  }
+
+  #mouse-icon {
+    display: none;
   }
 }
 
@@ -280,9 +323,10 @@ header {
   color: #141414;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   main {
     margin: 0 auto;
+    height: fit-content;
   }
   
   .sub-menu ul {
@@ -320,43 +364,31 @@ header {
   }
 }
 
-@media screen and (max-width: 480px) {
-  main {
-    margin: 0 auto;
-  }
-  
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .sub-menu ul {
     display: block;
+    margin: 0 auto;
   }
 
   .sub-menu ul li:nth-child(-n+5) {
     display: none;
   }
-
+  
   .sub-menu-button {
-    display: block;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 16% 58% 16%;
+    grid-template-rows: 100px;
+    grid-column-gap: 5%;
+    justify-items: center;
   }
-
-  .sub-menu-button label {
-    display: none;
-  }
-
+  
   .sub-menu-email {
     width: 100%;
-    border-radius: 0px;
-    margin-bottom: 10px;
   }
-
+  
   .sub-menu-submit {
     width: 100%;
-    border-radius: 0px;
     position: static;
-    transition: none;
-  }
-
-  .main-divider {
-    display: none;
   }
 }
 
@@ -441,33 +473,34 @@ header {
 
 .video {
   position: absolute;
-  margin: 19px 5.6%;
+  margin: 19px 6%;
 }
 
 .mobile-video {
   display: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .iphone-features {
-    display: grid;
-    grid-template-rows: 150px 150px 260px 400px;
-    height: 700px;
+    display: block;
+    height: fit-content;
   }
   
   .iphone-features h2 {
     width: 90%;
-    height: 0px;
+    height: 100px;
     font-size: 24px;
     line-height: 35px;
+    margin: 50px auto;
   }
   
   .iphone-features p {
     width: 80%;
-    height: 0px;
+    height: 100px;
     font-size: 18px;
     line-height: 25px;
     text-align: center;
+    margin: 50px auto 20px;
   }
   
   .iphone-features-images {
@@ -476,11 +509,11 @@ header {
 
   .column {
     display: block;
-    margin: 0 auto;
+    margin: 30px auto;
   }
 
   .column>div {
-    margin-bottom: 70px;
+    margin-bottom: 90px;
   }
   
   .iphone-features .column h3 {
@@ -495,7 +528,69 @@ header {
 
   .mobile-video {
     display: block;
+    width: 100%;
     margin: 0 auto;
+  }
+
+  video {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .iphone-features {
+    display: block;
+    height: fit-content;
+  }
+  
+  .iphone-features h2 {
+    width: 90%;
+    height: 100px;
+    font-size: 24px;
+    line-height: 35px;
+    margin: 50px auto;
+  }
+  
+  .iphone-features p {
+    width: 80%;
+    height: 100px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    margin: 50px auto 20px;
+  }
+  
+  .iphone-features-images {
+    display: none;
+  }
+
+  .column {
+    display: grid;
+    margin: 50px auto;
+  }
+
+  .column>div {
+    margin-bottom: 90px;
+  }
+  
+  .iphone-features .column h3 {
+    text-align: left;
+  }
+  
+  .iphone-features .column p {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .mobile-video {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  video {
+    width: 100%;
   }
 }
 
@@ -542,7 +637,7 @@ header {
   text-align: center;
 }
 
-.components .box1 {
+.box1 {
   display: grid;
   grid-template-rows: 303px 95px 57px 135px;
   justify-items: center;
@@ -629,8 +724,134 @@ text-transform: uppercase;
 letter-spacing: 1.8px;
 }
 
+@media screen and (max-width: 767px) {
+  .main-components {
+    display: block;
+    height: fit-content;
+  }
+  
+  .main-components h2 {
+    display: none;
+  }
+  
+  .components {
+    display: block;
+  }
+  
+  .components .box1 {
+    display: block;
+    height: 200px;
+    border-radius: 0;
+    border: 0;
+  }
+
+  .box1 img {
+    display: none;
+  }
+  
+  .box1:hover {
+    box-shadow: 0;
+  }
+  
+  .components .box1 button {
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .box1 h3, .box2 h3 {
+    height: 22px;
+    font-size: 18px;
+    margin: 40px auto 20px;
+  }
+  
+  .box1 p, .box2 p {
+    width: 80%;
+    height: 68px;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+  }
+  
+  .box2 {
+    display: block;
+    width: 100%;
+    height: 220px;
+    border-radius: 0px;
+    border: 1px solid rgba(20, 20, 20, 0.1);
+  }
+
+  .box2 img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-components {
+    display: block;
+    height: fit-content;
+  }
+  
+  .main-components h2 {
+    width: 80%;
+    font-size: 24px;
+    line-height: 35px;
+    margin: 50px auto 10px;
+  }
+  
+  .components {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+  
+  .box1 {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .box1 button {
+    margin-bottom: 50px;
+  }
+
+  .box1, .box2 {
+    display: block;
+    height: fit-content;
+  }
+
+  .box1 img {
+    width: 100%;
+  }
+
+  .box2 img {
+    margin: 50px auto 0;
+  }
+  
+  .box1:hover {
+    box-shadow: 0px;
+  }
+  
+  .box1 h3, .box2 h3 {
+    margin: 20px auto;
+  }
+  
+  .box1 p, .box2 p {
+    width: 65%;
+    margin: 10px auto 40px;
+  }
+  
+  .box2 {
+    width: 100%;
+    margin: 50px auto;
+  }
+
+  .box2 p a {
+    font-size: 14px;
+  }
+}
+
 /* Clients */
-/* 
+
 .clients {
   text-align: center;
   color: #fff;
@@ -763,4 +984,119 @@ margin: 0 auto;
 
 .client-img {
   margin: 0 auto;
-} */
+}
+
+@media screen and (max-width: 767px) {
+  .clients {
+    height: fit-content;
+  }
+  
+  .main-clients {
+    display: block;
+  }
+  
+  .client-testimonials {
+    display: block;
+    padding: 50px 0; 
+  }
+  
+  .clients-main-text {
+    display: none;
+  }
+  
+  .reviews {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .client-1, .client-2, .client-3 {
+    display: block;
+  }
+  
+  .client-1 .placeholder-img, .client-2 .placeholder-img, .client-3 .placeholder-img {
+    display: none;
+  }
+  
+  .client-comment {
+    text-align: left;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  
+  .client-1 .client-comment, .client-2 .client-comment, .client-3 .client-comment  {
+    width: 100%;
+  }
+  
+  .client-1 .client-foot, .client-2 .client-foot, .client-3 .client-foot {
+    display: block;
+  }
+  
+  .clients-name {
+    margin: 25px auto 5px;
+  }
+  
+  .clients-position {
+    margin: 5px auto 100px;
+  }
+  
+  .client-img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .clients {
+    height: fit-content;
+  }
+  
+  .main-clients {
+    display: block;
+  }
+  
+  .client-testimonials {
+    display: block;
+    padding: 50px 0; 
+  }
+  
+  .clients-main-text {
+    display: none;
+  }
+  
+  .reviews {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .client-1, .client-2, .client-3 {
+    display: block;
+  }
+  
+  .client-1 .placeholder-img, .client-2 .placeholder-img, .client-3 .placeholder-img {
+    display: none;
+  }
+  
+  .client-comment {
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  
+  .client-1 .client-comment, .client-2 .client-comment, .client-3 .client-comment  {
+    width: 100%;
+  }
+  
+  .client-1 .client-foot, .client-2 .client-foot, .client-3 .client-foot {
+    display: block;
+    margin-top: 30px;
+  }
+  
+  .clients-name {
+    margin: 25px auto 5px;
+  }
+  
+  .clients-position {
+    margin: 5px auto 100px;
+  }
+}

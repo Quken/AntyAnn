@@ -2637,14 +2637,15 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 117px auto 0;
-    .startup-left {
+    div.startup-left {
         background: url(../img/bg_1.png) no-repeat;
         //background-size: 100%;
-        
+        padding: 98px 6% 104px 28%;
     }
-    .startup-right {
+    div.startup-right {
         background : url(../img/bg_2.png) no-repeat;
         //background-size: 100%;
+        padding: 98px 11% 104px 18%;
     }
     div.startup-guide-topics:last-child {
         //margin: 98px 0 95px 14%;
@@ -2873,6 +2874,37 @@ body {
     }
 }
 
+@media screen and (max-width: 1245px) {
+  .grid {
+    section.awesome-site {
+      margin-bottom: 50px;
+    }
+    .slider-area {
+      grid-gap: 0 5%;
+    }
+  }
+  #startup-guide {
+    display: inline;
+    .startup-left {
+        padding-left: 0;
+        text-align: center;
+        background-size: 100%;
+        
+        div {
+          margin: 0 auto;
+        }
+    }
+    .startup-right {
+        background-size: 100%;
+      
+        padding-left: 0;
+        text-align: center;
+        div {
+            margin: 0 auto;
+        }
+    }
+}
+
 @media screen and (max-width: 1024px) {  
     body {
         font-size: $scaled-font;
@@ -2913,22 +2945,7 @@ body {
 
     }
 
-    #startup-guide {
-        display: inline;
-        .startup-left {
-            padding-left: 0;
-            text-align: center;
-            div {
-                margin: 0 auto;
-            }
-        }
-        .startup-right {
-            padding-left: 0;
-            text-align: center;
-            div {
-                margin: 0 auto;
-            }
-        }
+    
     }
 
     .footer .created-by div:nth-child(3) {
@@ -2957,6 +2974,7 @@ body {
     }
 }
 @media screen and (max-width: 768px) {
+  
     .grid {
         
         .slider-area {
@@ -2979,6 +2997,7 @@ body {
             * {
                 text-align: center;
             }
+            margin: 100px 0% 35px;
             margin-bottom: 0;
             hr {
                 margin-bottom: 20px;
@@ -2994,9 +3013,10 @@ body {
                 display: inline;
                 grid-template-columns: 1fr;
                 div {
-                    width: 70%;
-                    margin-left: 15%;
+                    width: 100%;
+                    margin-left: 0;
                     margin-right: 0;
+                    border-radius: 0;
                 }
                 .view-features {
                     font-size: $scaled-font;
@@ -3037,7 +3057,9 @@ body {
     .slider {
         display: none;
     }
-    
+    section.startup-guide-area {
+      background: #141414;
+    }
     #startup-guide {
         .startup-guide-topics {
             div {
@@ -3048,11 +3070,14 @@ body {
             }
             
         }
-        .startup-left {
-            padding-left: 1%;
+        
+        .startup-left, .startup-right {
+            //padding-left: 1%;
             text-align: center;
+            background: none;
+            padding-left: 0;
+            padding-right: 0;
         }
-
     }
     .footer {
         .main-menu {

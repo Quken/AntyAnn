@@ -1957,10 +1957,12 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 117px auto 0; }
-  .startup-guide .startup-left {
-    background: url(../img/bg_1.png) no-repeat; }
-  .startup-guide .startup-right {
-    background: url(../img/bg_2.png) no-repeat; }
+  .startup-guide div.startup-left {
+    background: url(../img/bg_1.png) no-repeat;
+    padding: 98px 6% 104px 28%; }
+  .startup-guide div.startup-right {
+    background: url(../img/bg_2.png) no-repeat;
+    padding: 98px 11% 104px 18%; }
   .startup-guide .startup-guide-topics {
     text-align: left;
     padding: 98px 0 104px 26%; }
@@ -2130,7 +2132,27 @@ body {
       padding-top: 8px;
       margin-left: 11%; }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1245px) {
+  .grid section.awesome-site {
+    margin-bottom: 50px; }
+  .grid .slider-area {
+    grid-gap: 0 5%; }
+  #startup-guide {
+    display: inline; }
+    #startup-guide .startup-left {
+      padding-left: 0;
+      text-align: center;
+      background-size: 100%; }
+      #startup-guide .startup-left div {
+        margin: 0 auto; }
+    #startup-guide .startup-right {
+      background-size: 100%;
+      padding-left: 0;
+      text-align: center; }
+      #startup-guide .startup-right div {
+        margin: 0 auto; } }
+
+@media screen and (max-width: 1245px) and (max-width: 1024px) {
   body {
     font-size: 1.3rem; }
   .grid {
@@ -2153,19 +2175,9 @@ body {
       grid-template-columns: 2fr 1fr;
       grid-gap: 0; }
     .grid .awesome-site div {
-      margin-bottom: 50px; }
-  #startup-guide {
-    display: inline; }
-    #startup-guide .startup-left {
-      padding-left: 0;
-      text-align: center; }
-      #startup-guide .startup-left div {
-        margin: 0 auto; }
-    #startup-guide .startup-right {
-      padding-left: 0;
-      text-align: center; }
-      #startup-guide .startup-right div {
-        margin: 0 auto; }
+      margin-bottom: 50px; } }
+
+@media screen and (max-width: 1245px) {
   .footer .created-by div:nth-child(3) {
     width: 80%; }
   .footer .main-menu {
@@ -2189,6 +2201,7 @@ body {
     .grid .slider-area .slider-options div p, .grid .slider-area .slider-options div span {
       font-size: 1.3rem; }
   .grid .features-area {
+    margin: 100px 0% 35px;
     margin-bottom: 0; }
     .grid .features-area * {
       text-align: center; }
@@ -2203,9 +2216,10 @@ body {
         padding: 50px 0;
         font-size: 1.3rem; }
       .grid .features-area .transform-ideas div {
-        width: 70%;
-        margin-left: 15%;
-        margin-right: 0; }
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 0; }
       .grid .features-area .transform-ideas .view-features {
         font-size: 1.3rem;
         padding: .7rem 0; }
@@ -2227,13 +2241,17 @@ body {
       font-size: 1.3rem; }
   .slider {
     display: none; }
+  section.startup-guide-area {
+    background: #141414; }
   #startup-guide .startup-guide-topics div {
     width: 70%; }
   #startup-guide .startup-guide-topics a, #startup-guide .startup-guide-topics span {
     font-size: 1.3rem; }
-  #startup-guide .startup-left {
-    padding-left: 1%;
-    text-align: center; }
+  #startup-guide .startup-left, #startup-guide .startup-right {
+    text-align: center;
+    background: none;
+    padding-left: 0;
+    padding-right: 0; }
   .footer .main-menu li {
     display: block; }
     .footer .main-menu li a {
